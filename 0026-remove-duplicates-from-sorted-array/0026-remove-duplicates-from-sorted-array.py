@@ -7,7 +7,6 @@ class Solution:
 
             if nums[i]!=nums[i-1]:
                 nums[idx]=nums[i]
-                idx =idx+1
-
+                idx=idx+1
         return idx
         
