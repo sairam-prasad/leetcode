@@ -1,28 +1,16 @@
-class Solution(object):
-    def majorityElement(self, nums):
-        """
-        :type nums: List[int]
-        :rtype: int
-        """
+class Solution:
+    def majorityElement(self, nums: List[int]) -> int:
         
-        dict={}
-        
-        for i in range(0,len(nums)):
-            
-            if dict.get(nums[i]):
-                dict[nums[i]]=dict.get(nums[i])+1
-            else:
-                dict[nums[i]]=1
-        
-        a=0
-        print(dict)
-        for i,j in dict.items():
-            print(i,j)
-            if j>a:
-                max=i
-                a=j
-        return max
+       array = {}
 
-            
-            
-        
+       for i in range(len(nums)):
+        if array.get(nums[i]):
+            array[nums[i]]= array.get(nums[i])+1
+        else:
+            array[nums[i]]=1
+
+        for key, value in array.items():
+
+            if value > len(nums)//2:
+                return key
+                
