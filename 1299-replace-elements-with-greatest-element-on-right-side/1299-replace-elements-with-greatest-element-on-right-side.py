@@ -5,7 +5,7 @@ class Solution:
         arr[len(arr)-1]= -1
         temp_max=0
 
-        print(arr)
+        
         for i in range(len(arr)-1,-1,-1):
             
             if arr[i]>maxi:
@@ -15,6 +15,7 @@ class Solution:
 
             else:
                 arr[i]=maxi
+            
         arr[len(arr)-1]=-1
 
         return arr
