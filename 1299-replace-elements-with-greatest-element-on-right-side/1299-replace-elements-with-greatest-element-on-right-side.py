@@ -16,7 +16,7 @@ class Solution:
             else:
                 arr[i]=maxi
             
-        arr[len(arr)-1]=-1
+        #arr[len(arr)-1]=-1
 
         return arr
                 
